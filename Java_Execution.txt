@@ -1,0 +1,27 @@
+                                        Java Code Execution 
+
+   __________________                       _______________                      _______________
+  |                  |      Compiler       |               |   Interpreter      |               |
+  | .java file       |  -----------------> | .class file   | -----------------> | Machine Code  |
+  | (human readable) |     (Entire file)   | (byte code)   |   (line by line)   |  (0 to 1)     |
+  |__________________|                     |_______________|                    |_______________|
+
+  this is the source code              - this code will not directly
+                                         run on a system.
+                                       - we need JVM to run this
+                                       - This is the reason why Java
+                                         Platform independent.
+
+
+More about Platform independence
+- It means byte code can run on all operating systems
+- We need to convert source code to machine code so computer can understand
+- Compiler helps in doing this by turning it into executable code
+- this executable code is a set of instructions for the computer
+- After compiling C/C++ code we get .exe file which is platform dependent
+- In Java we have byte code JVM converts this to machine code
+- Java is platform independent but JVM is platform dependent
+
+
+
+
