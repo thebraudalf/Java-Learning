@@ -48,6 +48,19 @@ public class introduction {
         System.out.println(st2.marks); // 78.98
         st2.changeName("student");
         st2.greeting();
+
+        // copy st0 constructor through init random
+        Student random = new Student(st0);
+        System.out.println(random.rollNo); // 20
+        System.out.println(random.name); // st
+        System.out.println(random.marks); // 92.24
+
+        // calling one constructor with another constructor
+        Student random2 = new Student();
+        System.out.println(random2.rollNo); // 12
+        System.out.println(random2.name); // student
+        System.out.println(random2.marks); // 95.23
+
     }
 }
 
@@ -61,26 +74,42 @@ class Student {
     float marks = 90;
 
     // Methods are similar to functions and expose the behavior of objects. methods allows us to reuse code, improving both efficiency and organization
-    void greeting() { System.out.println("Hello! " + name); }
+    void greeting() {
+        System.out.println("Hello! " + name);
+    }
 
-    void changeName(String name) { this.name = name; }
+    void changeName(String name) {
+        this.name = name;
+    }
 
     /// Here we need a way to add values to above properties through object, and we need one word to access every object
     // Constructor: Constructor is a block of codes similar to the method. It is called when an instance of the class is created.
     // It is a special type of method that is used to initialize the object.
 
     // This constructor is called ByDefault Constructor
-    Student() {
-        // "this" keyword is a reference variable that refers to the current object
-        this.rollNo = 20;
-        this.name = "st";
-        this.marks = 92.24f;
-    }
+//    Student() {
+//        // "this" keyword is a reference variable that refers to the current object
+//        this.rollNo = 20;
+//        this.name = "st";
+//        this.marks = 92.24f;
+//    }
 
     // This constructor is called Parameterized Constructor
     Student(int rollNo, String name, float marks) {
         this.rollNo = rollNo;
         this.name = name;
         this.marks = marks;
+    }
+
+    // We can call one constructor from another constructor
+    Student() {
+        this(12, "student", 95.23f);
+    }
+
+    // This constructor is called Copy Constructor
+    Student(Student newInstance) {
+        this.rollNo = newInstance.rollNo;
+        this.name = newInstance.name;
+        this.marks = newInstance.marks;
     }
 }
