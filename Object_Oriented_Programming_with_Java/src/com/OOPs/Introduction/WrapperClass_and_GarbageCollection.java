@@ -1,4 +1,4 @@
-package Introduction;
+package com.OOPs.Introduction;
 
 public class WrapperClass_and_GarbageCollection {
     // Wrapper Classes are classes in java is one whose object wraps or contains primitive datatypes
