@@ -1,6 +1,8 @@
 package com.OOPs.PrinciplesOfOOPs.Inheritance;
 
-// It is called Child Class or Sub-Base Class which inherits members of Parent Class or Base Class using extends keyword
+/// It is called Child Class or Sub-Base Class which inherits members of Parent Class or Base Class using extends keyword
+// In single inheritance, a sub-class is derived from only one super class.
+// It inherits the properties and behaviour of a single-parent class. Sometimes, it is also known as simple inheritance
 public class BoxWeight extends Box {
     double weight;
 
