@@ -1,0 +1,7 @@
+# Java Input/Output(I/O) 
+
+## Java brings various Streams with its I/O package that helps the user to perform all the input-output operations. 
+## These streams support all the types of objects, data-types, characters, files, etc. to fully execute the I/O operations.
+
+
+
